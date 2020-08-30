@@ -1,35 +1,58 @@
 baseURL = "http://farmermichael.com/"
 languageCode = "en-us"
 title = "Farmer Michael"
-theme="hugo-developer-portfolio"
+theme="bento"
 
-[params.plugins]
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css"
-  # JS Plugins
-  [[params.plugins.js]]
-  URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"
-  [[params.plugins.js]]
-  URL = "https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"
 
-[menu]
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  [[menu.main]]
-  name = "Blog"
-  URL = "blog"
-  [[menu.main]]
-  name = "Portfolio"
-  URL = "portfolio"
-  [[menu.main]]
-  name = "Contact"
-  URL = "contact"
+[taxonomies]
+category = "categories"
+tag = "tags"
 
+# Better code higlighting
+# via https://discourse.gohugo.io/t/pygmentscodefences-how-to-choose-themes/3842/3
+pygmentsCodefences = true
+pygmentsStyle = "vs"
+
+# Hightlight theme
+[markup.highlight]
+  style = "github"
+
+# Allow HTML rendering inside markdown
+[markup.goldmark.renderer]
+  unsafe = true
 
 [params]
-home = "Home" # What you want the homepage to show up as in the menu bar
-# Metadata
-description = "Michael D's personal internet destination"
-author = "Mike Driscoll"
+  # Show intro in the home page (with headline and description)
+  intro = true
+  headline = "This is a headline"
+  description = "A minimalist theme for Hugo, build with Tailwind CSS."
+
+  # Copyright note in the footer
+  copyright = "Copyright © 2020 Someone"
+
+  # Image in the homepage. You can setup a different image for social media
+  cover = "images/vancouver.jpg"
+  ogImage = "images/Black_Frizzle.jpg"
+
+  # Social media usernames
+  github = "XXXX"
+  twitter = "XXXX"
+  linkedin = "https://linkedin.com/in/XXXX"
+  email = "email@xxxx.com"
+
+  # Avatar (shown in the homepage)
+  avatar = "images/Black_Frizzle.jpg"
+  # Bio is shown in the end of posts
+  authorBio = "Mike is a Product Manager in Washington, DC. Follow him at <a href='#'>Twitter</a>"
+
+# Items in the top menu
+[menu]
+  [[menu.main]]
+      name = "About"
+      url = "/about"
+      weight = 1
+
+  [[menu.main]]
+      name = "Project"
+      url = "/projects"
+      weight = 1

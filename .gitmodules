@@ -1,3 +1,9 @@
 [submodule "themes/hugo-developer-portfolio"]
 	path = themes/hugo-developer-portfolio
 	url = https://github.com/samrobbins85/hugo-developer-portfolio
+[submodule "personal-site/themes/paper"]
+	path = personal-site/themes/paper
+	url = https://github.com/nanxiaobei/hugo-paper
+[submodule "personal-site/themes/bento"]
+	path = personal-site/themes/bento
+	url = https://github.com/leonardofaria/bento.git
