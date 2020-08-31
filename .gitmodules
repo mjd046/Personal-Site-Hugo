@@ -7,3 +7,6 @@
 [submodule "personal-site/themes/bento"]
 	path = personal-site/themes/bento
 	url = https://github.com/leonardofaria/bento.git
+[submodule "personal-site/themes/hugo-academic-master"]
+	path = personal-site/themes/hugo-academic-master
+	url = https://github.com/sourcethemes/academic-kickstart.git
