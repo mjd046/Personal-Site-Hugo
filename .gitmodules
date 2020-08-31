@@ -10,3 +10,6 @@
 [submodule "personal-site/themes/hugo-academic-master"]
 	path = personal-site/themes/hugo-academic-master
 	url = https://github.com/sourcethemes/academic-kickstart.git
+[submodule "personal-site/themes/academic"]
+	path = personal-site/themes/academic
+	url = https://github.com/sourcethemes/academic-kickstart.git
